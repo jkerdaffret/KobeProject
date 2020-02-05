@@ -409,7 +409,7 @@ input:not(:focus):invalid {
 
 div.containerg {
     width: 100%;
-    height: 400vh;
+    height: 250vh;
     box-sizing: border-box;
     background-image: url(images/dark-gray-background-soft-fifteen-shades-of-grey-smooth-background-with-the-addition-of-a-bit-of-noise_bvu2c-5qtg_thumbnail-full01.png);
     background-position: center;
@@ -543,6 +543,11 @@ div.wrapper a {
         background-size: cover;
     }
 
+    div.containerg {
+        height: 700vh;
+    }
+    
+
     .container a i {
         margin-left: 0;
     }
@@ -550,6 +555,111 @@ div.wrapper a {
 }
 
 @media (max-width: 600px){
-    
+
+    header {
+        width: 14%;
+        height: 105%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    header .logo {
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    header div ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    header div ul li {
+        margin: 30px 10px
+    }
+
+    header div ul li a {
+        font-size: 11px;
+        padding-bottom: 5px;
+    }
+
+    header div ul li a:hover {
+        border-bottom: 1px solid rgb(134, 55, 134);
+    }
+
+    .poster {
+        margin-left: 50px;
+        height: 100vh;
+    }
+
+    .navbar {
+        font-size: 11px;
+        height: 57%;
+        width: 14%;
+        position: absolute;
+    }
+
+    .navbar img {
+        margin-bottom: 20px;
+    }
+
+    .navbar div ul li {
+        margin: 30px 10px;
+    }
+
+    .navbar div ul li a {
+        font-size: 11px;
+    }
+
+    main #player article {
+        background-color: rgba(255, 255, 255, 0.671);;
+    }
+
+    main #man {
+        height: 100vh;
+    }
+
+
+    main #man div {
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 10px;
+        padding-top: 60px;
+    }
+
+    main #man div h4 {
+        margin-bottom: 20px;
+    }
+
+    main #man div p {
+        width: 280px;
+        height: 200px;
+    }
+
+
+    main #man div iframe {
+        width: 300px;
+        height: 200px;
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+
+    main #father {
+        height: 86vh;
+    }
+
+    main #father article.img {
+        width: 55%;
+        height: 55%;
+        margin: -50px 0 40px 0;
+    }
+
 
 }
