@@ -467,6 +467,10 @@ div.wrapper a {
         font-size: 15px;
     }
 
+    .poster {
+        height: 100vh;
+    }
+
     .navbar {
         font-size: 15px;
         width: 100%;
@@ -487,11 +491,11 @@ div.wrapper a {
         display: flex;
         flex-direction: column;
         justify-content: start;
+        background-color: rgba(255, 255, 255, 0.671);
     }
 
     main #player article div {
         position: relative;
-
     }
 
     main #man {
@@ -510,6 +514,10 @@ div.wrapper a {
         align-items: center;
         font-size: 14px;
         padding-top: 40px;
+    }
+
+    main #father {
+        height: 88vh;
     }
 
     main #father article div {
@@ -615,7 +623,7 @@ div.wrapper a {
     }
 
     main #player article {
-        background-color: rgba(255, 255, 255, 0.671);;
+        background-color: rgba(255, 255, 255, 0.671);
     }
 
     main #man {
