@@ -1,0 +1,402 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+section.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/kobe-bryant-3.jpg);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+section.background a {
+    text-decoration: none;
+    color: gold;
+    padding-bottom: 50px ;
+}
+
+section.background i {
+    font-size: 60px;
+    animation: animate 0.5s infinite alternate;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(-8px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(8px);
+    }
+}
+
+    h4 {
+        font-size: 25px;
+        font-weight: bold;
+        color: black;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+/* HEADER */
+
+header {
+    margin: 0;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 3px 3px 12px black;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+header .logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header div ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header div ul li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+header div ul li a {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 10px;
+}
+
+header div ul li a:hover {
+    border-bottom: 2px solid rgb(134, 55, 134);
+}
+
+section.poster {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/kobe-bryant-UHD.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 200px;
+}
+
+/* MAIN */
+
+.navbar {
+    font-size: 20px;
+    height: 80px;
+    width: 72%;
+}
+
+/* #PLAYER */
+
+#player {
+    background: url(images/661242.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main #player article {
+    width: 300px;
+    height: 450px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.493);
+    box-shadow: 3px 3px 12px rgb(53, 50, 50);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main #player article div.champ {
+    background-image: url(images/kobe-get.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40%;
+}
+
+main #player article div.mvp {
+    background-image: url(images/Kobe-Bryant-images-ultra-hd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40%;
+}
+
+main #player article div {
+    width: 100%;
+    height: 50%;
+}
+
+main #player article div ul li {
+    font-size: 18px;
+    color: rgb(49, 46, 46);
+    margin-left: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+main #player article div ul li i {
+    font-size: 14px;
+    color: black;
+    margin-right: 20px;
+    margin-bottom: 8px;
+}
+
+main #player div button {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    background-color: rgba(58, 55, 50, 0.247);
+    box-shadow: 5px 5px 12px black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border: solid 1px  transparent;
+    color: whitesmoke;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+main #player div button:hover {
+    box-shadow: 0 0 0 transparent;
+    background-color: rgba(245, 245, 245, 0.247);
+    color: rgba(58, 55, 50);
+}
+
+/* #MAN */
+
+main #man {
+    background-image: url(images/270183.jpg) ;
+    display: flex;
+    align-items: center
+}
+
+main #man div {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: wheat;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+main #man div p {
+    width: 500px;
+    text-align: justify;
+}
+
+main #man div p i {
+    margin-left: 20px;
+}
+
+
+/* #FATHER */
+
+main #father {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+    background-color: rgba(75, 12, 94, 0.692);;
+}
+
+main #father article.img {
+    width: 40%;
+    height: 60%;
+    background: url(images/gianna.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main #father article div {
+    width: 400px;
+    height: 60%;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+main #father article div h4 {
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    box-shadow: 2px 2px 10px black;
+}
+
+footer i {
+    font-size: 40px;
+    color: rgba(223, 188, 52, 0.514);
+}
+
+footer .logo {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+footer .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+footer .copyright {
+    font-size: 10px;
+    color: white;
+}
+
+/* CONTACT */
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/776019.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(211, 209, 209, 0.719);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(102, 7, 161);
+	font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.container h1 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 50px;
+}
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container input {
+	border: 2px solid transparent;
+	border-radius: 100rem;
+	color: rgb(99, 0, 160);
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+    outline: none;
+    margin: 40px 20px;
+    padding: 15px 35px;
+}
+
+input:focus {
+	border: 2px solid rgb(99, 0, 160);
+}
+
+input:not(:focus):invalid {
+	background: #b20a37;
+	border: 2px solid #b20a37;
+	color: #fff;
+	animation: headshake 150ms cubic-bezier(.4, .1, .6, .9);
+	animation-iteration-count: 2;
+}
+
+@keyframes headshake {
+	25% {
+		transform: translateX(1%);
+	}
+	75% {
+		transform: translateX(-1%);
+	}
+}
+
+.container input[type="submit"] {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;  
+    color: white;
+    background-color: rgb(99, 0, 160);
+}
+
+.container input[type="submit"]:hover {
+    color: rgb(99, 0, 160);
+    background-color: white;
+}
