@@ -418,6 +418,8 @@ div.containerg h1 {
     text-decoration: underline;
     font-size: 50px;
     font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    padding-top: 50px;
 }
 
 div.wrapper {
