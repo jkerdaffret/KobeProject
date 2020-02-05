@@ -4,12 +4,13 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 html {
     width: 100%;
     height: 100vh;
-    box-sizing: border-box;
+  
     font-family: sans-serif;
 }
 
@@ -76,9 +77,8 @@ section.background i {
 
 header {
     margin: 0;
-    height: 200px;
+    height: 20vh;
     width: 100%;
-    position: absolute;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -121,15 +121,16 @@ header div ul li a:hover {
     border-bottom: 2px solid rgb(134, 55, 134);
 }
 
-section.poster {
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/kobe-bryant-UHD.jpg);
-    background-position: center center;
+.poster {
+   
+    height: 80vh;
+    background: url("images/kobe-bryant-UHD.jpg");
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 200px;
+
 }
+
 
 /* MAIN */
 
@@ -137,6 +138,7 @@ section.poster {
     font-size: 20px;
     height: 80px;
     width: 72%;
+    position: absolute;
 }
 
 /* #PLAYER */
@@ -154,34 +156,23 @@ section.poster {
 
 main #player article {
     width: 300px;
-    height: 450px;
     border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.493);
     box-shadow: 3px 3px 12px rgb(53, 50, 50);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-bottom: 20px;
 }
 
-main #player article div.champ {
-    background-image: url(images/kobe-get.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40%;
-}
-
-main #player article div.mvp {
-    background-image: url(images/Kobe-Bryant-images-ultra-hd.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40%;
+main #player article img{
+    width: 100%;
 }
 
 main #player article div {
     width: 100%;
     height: 50%;
+    position: relative;
 }
 
 main #player article div ul li {
@@ -271,18 +262,22 @@ main #father article div {
     width: 400px;
     height: 60%;
     text-align: justify;
-    color: rgb(0, 0, 0);
+    color: transparent;
     font-size: 20px;
     font-weight: 500;
     padding: 20px;
     font-family: 'Roboto Condensed', sans-serif;
+    transition: all 3s linear;
 }
 
 main #father article div h4 {
-    color: rgb(0, 0, 0);
+    color: black;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+main #father article div:hover {
+    color: black;
+}
 
 
 /* FOOTER */
@@ -332,6 +327,14 @@ footer .copyright {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.container a i {
+    color: rgb(102, 7, 161);
+    margin-left: -800px;
+    margin-top: 80px;
+    font-size: 40px;
+}
+
 .container {
     width: 100%;
     height: 100vh;
@@ -394,6 +397,7 @@ input:not(:focus):invalid {
     font-size: 25px;  
     color: white;
     background-color: rgb(99, 0, 160);
+    transition: all 0.3s linear;
 }
 
 .container input[type="submit"]:hover {
@@ -420,18 +424,132 @@ div.containerg h1 {
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
     padding-top: 50px;
+    margin-bottom: 100px;
+    color: rgb(161, 138, 7);
 }
 
 div.wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px;
+    grid: repeat(4, [line1 line2 line3 line4] 500px) / auto-flow 650px;
 }
 
 div.wrapper div.photo {
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 50px;
+}
+
+div.wrapper a {
+    cursor: pointer;
+}
+
+@media (max-width: 1024px){
+
+    section.background a {
+        color: rgb(102, 7, 161);
+    }
+
+
+    header {
+        height: 100px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header .logo h1 {
+        display: none;
+    }
+
+    header div ul li a {
+        font-size: 15px;
+    }
+
+    .navbar {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .navbar div ul li a {
+        font-size: 15px;
+    }
+
+    #player {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 150vh;
+    }
+
+    main #player article {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    main #player article div {
+        position: relative;
+
+    }
+
+    main #man {
+        display: flex;
+        flex-direction: column;
+        height: 110vh;
+    }
+
+    main #man div {
+        width: 550px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 14px;
+        padding-top: 40px;
+    }
+
+    main #father article div {
+        font-size: 16px;
+    }
+
+    footer {
+        height: 120px;
+    }
+
+    footer .logo {
+        font-size: 10px;
+        margin: -20px 0 -2px 0;
+    }
+
+    footer .logo img {
+        height: 20px;
+    }
+
+    div.wrapper {
+        display: grid;
+        grid: repeat(12, [line1 line2 line3 line4 line5 line6 line7 line8 line9 line10 line11 line12] 500px) / auto-flow 650px;
+        justify-content: center;
+    }
+    
+    div.wrapper div.photo {
+        width: 500px;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container a i {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 600px){
+    
+
 }
