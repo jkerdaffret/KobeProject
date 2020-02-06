@@ -137,7 +137,7 @@ header div ul li a:hover {
 .navbar {
     font-size: 20px;
     height: 80px;
-    width: 72%;
+    width: 80%;
     position: absolute;
 }
 
@@ -219,7 +219,7 @@ main #man {
 
 main #man div {
     width: 100%;
-    height: 400px;
+    height: 450px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -229,7 +229,7 @@ main #man div {
 }
 
 main #man div p {
-    width: 450px;
+    width: 380px;
     text-align: justify;
 }
 
@@ -408,8 +408,8 @@ input:not(:focus):invalid {
 /* GALERIE */
 
 div.containerg {
-    width: 250vh;
-    height: 300vh;
+    width: 200vh;
+    height: 250vh;
     box-sizing: border-box;
     background-image: url(images/dark-gray-background-soft-fifteen-shades-of-grey-smooth-background-with-the-addition-of-a-bit-of-noise_bvu2c-5qtg_thumbnail-full01.png);
     background-position: center;
@@ -501,19 +501,31 @@ div.wrapper a {
     main #man {
         display: flex;
         flex-direction: column;
-        height: 110vh;
+        height: 120vh;
     }
 
     main #man div {
-        width: 550px;
+        width: 400px;
         height: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
-        font-size: 14px;
+        font-size: 12px;
         padding-top: 40px;
+    }
+
+    main #man div p {
+        width: 350px;
+        height: 180px;
+        font-size: 16px;
+    }
+
+    main #man div iframe {
+        width: 350px;
+        height: 230px;
+        margin: 0 30px;
     }
 
     main #father {
@@ -539,22 +551,31 @@ div.wrapper a {
 
     div.wrapper {
         display: grid;
-        grid: repeat(12, [line1 line2 line3 line4 line5 line6 line7 line8 line9 line10 line11 line12] 500px) / auto-flow 650px;
+        grid: repeat(6, [line1 line2 line3 line4 line5 line6] 400px) / auto-flow 500px;
         justify-content: center;
     }
     
-    div.wrapper div.photo {
-        width: 500px;
-        height: 400px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    div.containerg {
+        width: 100%;
+        height: 350vh;
     }
 
-    div.containerg {
-        height: 700vh;
+    div.containerg h1 {
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-size: 40px;
+        font-family: 'Roboto Condensed', sans-serif;
+        text-align: center;
+        padding-top: 50px;
+        margin-bottom: 50px;
+        color: rgb(161, 138, 7);
     }
     
+    div.wrapper div.photo {
+        width: 400px;
+        height: 350px;
+        margin: 50px;
+    }
 
     .container a i {
         margin-left: 0;
@@ -669,5 +690,116 @@ div.wrapper a {
         margin: -50px 0 40px 0;
     }
 
+    div.containerg {
+        width: 100%;
+        height: 500vh;
+    }
+
+    div.containerg h1 {
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-size: 40px;
+        font-family: 'Roboto Condensed', sans-serif;
+        text-align: left;
+        padding-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 40px;
+        color: rgb(161, 138, 7);
+    }
+    
+    div.wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    div.wrapper div.photo {
+        width: 300px;
+        height: 250px;
+        margin: 30px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+
+    header div ul li a {
+        font-size: 10px;
+    }
+
+    .navbar div ul li {
+        margin: 15px 5px;
+    }
+
+    .navbar div ul li a {
+        font-size: 9px;
+    }
+
+    .navbar {
+        height: 50%;
+    }
+
+    header {
+        width: 16%;
+    }
+
+    main #player article {
+        width: 250px;
+    }
+
+
+    main #man div p {
+        width: 250px;
+        height: 150px;
+    }    
+
+    main #man div iframe {
+        width: 260px;
+        height: 180px;
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+
+    main #father article div {
+        width: 250px;
+    }
+
+    main #father article.img {
+        width: 55%;
+        height: 50%;
+        margin: -10px 0 40px 0;
+    }
+
+    div.containerg {
+        width: 100%;
+        height: 500vh;
+    }
+
+    div.containerg h1 {
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-size: 40px;
+        font-family: 'Roboto Condensed', sans-serif;
+        text-align: left;
+        padding-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 40px;
+        color: rgb(161, 138, 7);
+    }
+    
+    div.wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    div.wrapper div.photo {
+        width: 300px;
+        height: 250px;
+        margin: 30px;
+    }
 
 }
