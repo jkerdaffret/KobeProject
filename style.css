@@ -749,6 +749,9 @@ div.wrapper a {
         width: 250px;
     }
 
+    main #man {
+        height: 142vh;
+    }
 
     main #man div p {
         width: 250px;
@@ -758,8 +761,8 @@ div.wrapper a {
     main #man div iframe {
         width: 260px;
         height: 180px;
-        margin-top: 50px;
-        margin-bottom: 80px;
+        margin-top: 80px;
+        margin-bottom: 50px;
     }
 
     main #father article div {
